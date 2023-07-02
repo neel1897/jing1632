@@ -60,3 +60,7 @@ The Instruction memory is a 32-bit wide memory with a 16-bit address space. It i
 Control Unit:
 The final piece that ties the entire computer together is the Control Unit. It is effectively just an instruction register. Based on the mode of the computer, the instruction register will hold either 16-bit short instructions or the full 32-bit length instructions. These instructions are then broken up using a 32-bit splitter to decode each bit. Some of the bits are used as address bits for the Register Banks, control signals for Read/Write in data memory, program counter and other modules of the computer. This can be achieved using combiners, multiplexers, controlled buffers, tunnels and other gate level elements. To understand how each instruction is decoded in it’s 16-bit state or it’s 32-bit state, refer the Instruction Decode Tables present in the Appendix Section.
 
+How to encode the instructions for Jing1632?
+Here is the encoding data sheet for Enable32 = Low:
+![image](https://github.com/neel1897/jing1632/assets/88762634/c165c77e-a3de-48e3-ad38-6796c47f7b19)
+
